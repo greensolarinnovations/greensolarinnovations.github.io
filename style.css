@@ -1,0 +1,854 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f0f8ff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #008080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('image/solar-panel-cell-on-dramatic-sunset-sky-background-free-photo.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    
+    padding: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-content button {
+    background-color: #ffd700;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero-content button:hover {
+    background-color: #ffa500;
+  }
+  
+  /* Other Sections */
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  section h2 {
+    color: #008080;
+    margin-bottom: 1rem;
+  }
+  
+  #benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #benefits li {
+    background-color: #e0f7fa;
+    margin: 0.5rem auto;
+    max-width: 300px;
+    padding: 0.7rem;
+    border-radius: 5px;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  form button {
+    background-color: #008080;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #006666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .footer-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-contact h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .address-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+  }
+  
+  .address {
+    flex: 1 1 300px;
+  }
+  
+  .address p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  
+  footer {
+    background-color: #001f4d; /* Dark Blue */
+    color: #cfd9e8;            /* Light bluish text for contrast */
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-contact h3 {
+    margin-bottom: 0.5rem;
+    color: #a3bffa;  /* lighter blue for headings */
+  }
+  
+  .address-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+  }
+  
+  .address {
+    flex: 1 1 300px;
+  }
+  
+  .address p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #cfd9e8;
+  }
+  /* Header Container */
+header {
+    background-color: #236413; /* Dark Blue */
+    padding: 1rem 2rem;
+  }
+  
+  header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo / Company Name */
+  .logo {
+    color: #010610;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Navigation Buttons Container */
+  .nav-buttons {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual Nav Buttons */
+  .nav-btn {
+    background-color: #275836;
+    color: #e1e9ff;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Hover effect for buttons */
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: #276134;
+    color: #001f4d;
+    outline: none;
+  }
+
+  #services {
+    padding: 3rem 2rem;
+    background-color: #f0f4ff;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto 3rem auto;
+    border-radius: 10px;
+  }
+  
+  #services h2 {
+    color: #001f4d;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex: 1 1 280px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .service-card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .service-card p {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  /* Mission & Vision Section */
+#mission-vision {
+    background: linear-gradient(135deg, #003366, #6699cc);
+    color: #e6f0ff;
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto 3rem auto;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.4);
+  }
+  
+  #mission-vision h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  
+  .mission-container {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    border-left: 6px solid #a3bffa;
+    padding-left: 1rem;
+  }
+  
+  .vision-container,
+  .communication-container {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Monsoon Article Section */
+  #monsoon-article {
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #001f4d;
+  }
+  
+  #monsoon-article h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #003366;
+  }
+  
+  #monsoon-article h3 {
+    margin-top: 1.5rem;
+    color: #004080;
+  }
+  
+  #monsoon-article p {
+    margin-top: 0.7rem;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  #mission-vision {
+    background-color: #0d254c; /* dark blue background */
+    color: #f0f4f8; /* light text for contrast */
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 15px rgba(13, 37, 76, 0.4);
+  }
+  
+  #mission-vision h2 {
+    color: #ffd966; /* a warm yellow for headings */
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid #ffd966;
+    padding-bottom: 8px;
+    width: fit-content;
+  }
+  
+  #mission-vision p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e1e8f0;
+  }
+  
+  .mission-text {
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .vision-container, .communication-container {
+    margin-top: 30px;
+  }
+  .benefit-cleaning ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0; /* Remove default UL padding */
+    list-style: none; /* Remove default bullets */
+    justify-content: center; /* Center the items */
+  }
+  
+  .benefit-cleaning li {
+    flex: 1 1 300px; /* Flexible width for responsiveness */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(13, 37, 76, 0.3);
+    min-width: 250px;
+  }
+  
+  .benefit-cleaning li strong {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .benefit-cleaning h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #647269;
+    font-size: 1.7rem;
+  }
+  
+  /* Solar Panel Installation Benefits Section */
+#installation-benefits {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  #installation-benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .installation-benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .benefit-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+  }
+  
+  .benefit-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c7a7b;
+  }
+  
+  .benefit-item p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .installation-benefits-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benefit-block {
+      max-width: 90%;
+    }
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between logo and text */
+  }
+  
+  .logo-image {
+    width: 50px; /* adjust size as per your logo */
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .logo-text {
+    font-size: 1.8rem;
+    color: #ebf2f3; /* adjust to match your theme */
+    font-weight: bold;
+  }
+  #mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #fff; /* white background like benefits */
+    flex-wrap: wrap;
+  }
+  
+  #mission-vision .block {
+    background-color: #f9f9f9; /* very light gray */
+    color: #333; /* dark text for readability */
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    flex: 1 1 30%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ddd; /* light border for separation */
+  }
+  
+  #mission-vision .block h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #0b3d91; /* same accent blue from header/logo */
+    border-bottom: 3px solid #0b3d91;
+    padding-bottom: 8px;
+  }
+  
+  #mission-vision .block p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  @media (max-width: 900px) {
+    #mission-vision {
+      flex-direction: column;
+    }
+  
+    #mission-vision .block {
+      flex: none;
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    #about-us {
+  padding: 40px 20px;
+  background-color: #fff; /* or whatever background you want */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about-us .section-title {
+  font-size: 2.5rem;
+  color: #0b3d91; /* your brand blue */
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Basic resets */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container max width and padding */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  nav ul.nav-buttons {
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav ul.nav-buttons li a.nav-btn {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul.nav-buttons li a.nav-btn:hover {
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 30vh;   
+    background: url('image/solar-panel-cell-on-dramatic-sunset-sky-background-free-photo.jpg') center no-repeat;
+    background-size: auto 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-content button {
+    background-color: #28a745;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Installation Benefits */
+  .installation-benefits-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px 15px;
+  }
+  
+  .benefit-block {
+    flex: 1 1 30%;
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  }
+  
+  .benefit-item h3 {
+    margin-top: 0;
+    color: #28a745;
+  }
+  
+  /* About Us Section */
+  #about-us {
+    padding: 40px 15px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  #about-us .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+  
+  #mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+    flex: 1 1 30%;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .block h2 {
+    color: #28a745;
+    margin-top: 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #eee;
+    padding: 30px 15px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+  }
+  
+  .footer-contact {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .address-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .address {
+    background: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #eee;
+    flex: 1 1 350px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .address img {
+    width: 50px;
+    height: auto;
+    margin-top: 4px;
+  }
+  
+  .address p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 992px) {
+    .installation-benefits-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .benefit-block {
+      flex: 1 1 100%;
+    }
+  
+    #mission-vision {
+      flex-direction: column;
+    }
+  
+    .block {
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header .container {
+      justify-content: center;
+    }
+  
+    .logo-text {
+      font-size: 1.5rem;
+    }
+  
+    nav ul.nav-buttons {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero-content button {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  
+    .address-container {
+      flex-direction: column;
+    }
+  
+    .address {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+
+  }
+  
